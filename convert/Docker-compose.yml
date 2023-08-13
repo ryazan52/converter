@@ -20,7 +20,7 @@ services:
     ports:
       - "5432:5432"
   bot:
-    build: .
+    build: ..
     command: sh -c "make migrate && python -m bot"
     env_file:
       -  ./.env
